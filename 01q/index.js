@@ -1,8 +1,8 @@
 const { MongoClient } = require("mongodb");
 
 // Replace the uri string with your connection string
-const uri = " mongodb://127.0.0.1:27017>";
-
+const uri = "mongodb://localhost:27017";
+      
 const client = new MongoClient(uri);
 
 async function run() {
@@ -12,7 +12,7 @@ async function run() {
 
     // Queries for a movie that has a title value of 'Back to the Future'
     const query = { name: 'Banana' };
-    const fruta = await movies.findOne(query);
+    const fruta = await frutas.findOne(query);
 
     console.log(fruta);
   } finally {

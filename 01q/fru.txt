@@ -1,0 +1,1 @@
+db.frutas.insertOne({_id: 1, name: "Banana", price: 2.90})
